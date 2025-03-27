@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cauveri Construction</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="brand">CAUVERY CONSTRUCTION</span></a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html" class="nav-item">HOME</a>
+        <a href="About.html" class="nav-item">ABOUT</a>
+        <a href="services.html" class="nav-item">SERVICES</a>
+        <a href="projects.html" class="nav-item active">PROJECTS</a>
+        <a href="Contact.html" class="nav-item">CONTACT</a>
+    </div>
+    </div>
+</header>
+<!-- content -->
+<section id="home" class="hero">      
+  <div class="hero-content">
+      <h1>Our projects</h1>
+      <p>"Your project, our expertise – a perfect match."</p>
+      <a href="#overview" class="btn">Expertise our pride</a>
+  </div>
+</section>
+
+    <section id="overview">
+      <div class="container">
+        <div class="project-header">
+          <h2><div class="text-center mb-4">Portfolio</h2>
+      
+          <div class="projects">
+            <!-- Project 1 -->
+            <div class="project-card">
+              <img src="image/img 5.jpg" alt="Project 1">
+              <div class="card-content">
+                <h3>Residential Building</h3>
+                <p>Completed: 2024 | Location: New York</p>
+                <p>We built a state-of-the-art residential complex with all modern amenities.</p>
+               
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+              <img src="image/img 6.jpg" alt="Project 2">
+              <div class="card-content">
+                <h3>Commercial Tower</h3>
+                <p>Completed: 2025 | Location: San Francisco</p>
+                <p>A towering commercial structure designed for businesses and retail.</p>
+               
+              </div>
+            </div>
+            <div class="project-card">
+                <img src="image/img 4.jpg" alt="Project 3">
+                <div class="card-content">
+                  <h3>Mixed-Use Development</h3>
+                  <p>Completed: 2025 | Location: Chicago</p>
+                  <p>A modern mixed-use development with residential, retail, and office spaces.</p>
+   
+                </div>
+              </div>
+              <div class="project-card">
+                <img src="image/img 6.jpg" alt="Project 4">
+                <div class="card-content">
+                    <h3>Luxury Villas</h3>
+                    <p>Completed: 2023 | Location: Miami</p>
+                    <p>Exclusive luxury villas designed for comfort and privacy with stunning views.</p>
+                  
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project-card">
+                <img src="image/img 5.jpg" alt="Project 5">
+                <div class="card-content">
+                    <h3>Urban Park</h3>
+                    <p>Completed: 2024 | Location: Los Angeles</p>
+                    <p>A vast urban park offering green space, walking paths, and recreational areas.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Project 6 -->
+            <div class="project-card">
+                <img src="image/img 4.jpg" alt="Project 6">
+                <div class="card-content">
+                    <h3>Waterfront Complex</h3>
+                    <p>Completed: 2025 | Location: Seattle</p>
+                    <p>A waterfront complex with a combination of commercial spaces and residential units.</p>
+                    
+                </div>
+            </div>
+            <!-- More projects can be added here -->
+          </div>
+        </div>
+      </section>
+         <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Quick Links -->
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <p>📍 123 Cauveri Street, Bangalore, India</p>
+          <p>📧 <a href="mailto:info@cauvericonstruction.com">info@cauvericonstruction.com</a></p>
+          <p>📞 +91-9876543210</p>
+        </div>
+  
+        <!-- Social Links -->
+        <div class="col-md-4 text-center">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+        <p>&copy; 2025 Cauveri Construction. All Rights Reserved.</p>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</footer>
+<script type="text/javascript">
+  //javascript of responsive navigation menu
+  const menuBtn = document.querySelector(".menu-btn");
+  const navigation = document.querySelector(".navigation");
+
+
+  menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+  });
+
+  //script for video slider navigation
+  const btns = document.querySelectorAll(".nav-btn");
+  const slides = document.querySelectorAll(".video-slide ");
+  const contents = document.querySelectorAll(".content");
+
+
+  var sliderNav =  function (manual){
+      btns.forEach((btn) => {
+          btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+          slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+          content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+  }
+
+  btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+          sliderNav(i);
+      });
+  });
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
+</body>
+</html>

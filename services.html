@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cauveri Construction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="brand">CAUVERY CONSTRUCTION</span></a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="index.html" class="nav-item">HOME</a>
+          <a href="About.html" class="nav-item ">ABOUT</a>
+          <a href="services.html" class="nav-item active">SERVICES</a>
+          <a href="projects.html" class="nav-item">PROJECTS</a>
+          <a href="Contact.html" class="nav-item">CONTACT</a>
+      </div>
+      </div>
+  </header>
+  <section id="home" class="hero">     
+    <div class="hero-content">
+        <h1>About our legacy</h1>
+        <p>"Building your future, one brick at a time."</p>
+        <a href="#about" class="btn">Expertise our pride</a>
+    </div>
+</section>
+<section id="construction-services">
+  <h2 class="text-center mb-4">Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="image/servies.jpg" alt="Service 1">
+      <h3>Residential Construction</h3>
+      <p>High-quality residential construction services for your dream home.</p>
+    </div>
+    <div class="service-card">
+      <img src="image/servies.jpg" alt="Service 2">
+      <h3>Commercial Construction</h3>
+      <p>Expert commercial construction solutions to build your business space.</p>
+    </div>
+    <div class="service-card">
+      <img src="image/servies.jpg" alt="Service 3">
+      <h3>Renovation Services</h3>
+      <p>Transform your space with our comprehensive renovation services.</p>
+    </div>
+    <div class="service-card">
+      <img src="image/servies.jpg" alt="Service 4">
+      <h3>Infrastructure and Civil Engineering</h3>
+      <p>Transform your space with our comprehensive renovation services.</p>
+    </div>
+    <div class="service-card">
+      <img src="image/servies.jpg" alt="Service 5">
+      <h3>Specialized Construction</h3>
+      <p>Transform your space with our comprehensive renovation services.</p>
+    </div>
+    <div class="service-card">
+      <img src="image/servies.jpg" alt="Service 6">
+      <h3> Pre-Construction Services</h3>
+      <p>Transform your space with our comprehensive renovation services.</p>
+    </div>
+    <div class="service-card">
+      <img src="image/servies.jpg" alt="Service 7">
+      <h3>RConstruction Management</h3>
+      <p>Transform your space with our comprehensive renovation services.</p>
+    </div>
+    <div class="service-card">
+      <img src="image/servies.jpg" alt="Service 8">
+      <h3>Post-Construction Services</h3>
+      <p>Transform your space with our comprehensive renovation services.</p>
+    </div>
+    <!-- Add more service cards as needed -->
+  </div>
+</section>
+
+           <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Quick Links -->
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <p>📍 123 Cauveri Street, Bangalore, India</p>
+          <p>📧 <a href="mailto:info@cauvericonstruction.com">info@cauvericonstruction.com</a></p>
+          <p>📞 +91-9876543210</p>
+        </div>
+  
+        <!-- Social Links -->
+        <div class="col-md-4 text-center">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+        <p>&copy; 2025 Cauveri Construction. All Rights Reserved.</p>
+      </div>
+    </div>
+</footer>
+<script type="text/javascript">
+  //javascript of responsive navigation menu
+  const menuBtn = document.querySelector(".menu-btn");
+  const navigation = document.querySelector(".navigation");
+
+
+  menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+  });
+
+  //script for video slider navigation
+  const btns = document.querySelectorAll(".nav-btn");
+  const slides = document.querySelectorAll(".video-slide ");
+  const contents = document.querySelectorAll(".content");
+
+
+  var sliderNav =  function (manual){
+      btns.forEach((btn) => {
+          btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+          slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+          content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+  }
+
+  btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+          sliderNav(i);
+      });
+  });
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
+  </body>
+  </html>
